@@ -127,7 +127,19 @@ window.config = {
         omitQuotationForMultipartRequest: true,
       },
     },
-
+    {
+    friendlyName: 'AWS HealthImaging',
+    namespace: 'ohif-aws-healthimaging.dataSourcesModule.healthlake',
+    sourceName: 'healthlake',
+    configuration: {
+      name: 'healthlake',
+      healthlake: {
+        datastoreID: 'e65cc87bd14a4f1e87a354c7dfaf0fec',
+        endpoint: 'http://localhost:8089',
+      },
+      singlepart: 'bulkdata,video,pdf,image/jphc',
+    }
+  },
     {
       namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
       sourceName: 'ohif2',
